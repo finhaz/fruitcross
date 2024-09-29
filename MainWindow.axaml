@@ -5,5 +5,13 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="fruitcross.MainWindow"
         Title="fruitcross">
-    Welcome to Avalonia版本fruit!
+
+	<DataGrid Margin="20" ItemsSource="{Binding People}"
+			  AutoGenerateColumns="True" IsReadOnly="True"
+			  GridLinesVisibility="All"
+			  BorderThickness="1" BorderBrush="Gray">
+	</DataGrid>
+
+
+
 </Window>
